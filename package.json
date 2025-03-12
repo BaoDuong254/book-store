@@ -1,7 +1,25 @@
 {
   "name": "bookstore",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "CRUD book store web app",
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "mongodb"
+  ],
+  "homepage": "https://github.com/BaoDuong254/book-store#readme",
+  "bugs": {
+    "url": "https://github.com/BaoDuong254/book-store/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaoDuong254/book-store.git"
+  },
+  "license": "ISC",
+  "author": "BaoDuong254 duonggiabao254@gmail.com",
+  "type": "commonjs",
+  "main": "app.js",
   "scripts": {
     "start": "nodemon app.js"
   },
