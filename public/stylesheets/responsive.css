@@ -1,11 +1,11 @@
 /* Tablet */
-@media (min-width:480px) and (max-width:768px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .content_book {
         width: 50%;
     }
 }
 /* Mobile */
-@media (min-width:240px) and (max-width:480px) {
+@media (min-width: 240px) and (max-width: 480px) {
     html,
     body {
         padding: 1rem;

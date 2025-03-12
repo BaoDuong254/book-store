@@ -1,65 +1,65 @@
 extends layout
 
 block content
-    div.title-book
+    .title-book
         h1 BOOK STORE
 
     //- Create books
-    div.content_book
+    .content_book
         h2 Create Books
-        form(action="/" method="POST")
+        form(action='/', method='POST')
             div
-                label(for="tittle") Title
-                input(type="text" name="title" required="required")
+                label(for='tittle') Title
+                input(type='text', name='title', required='required')
             div
-                label(for="tittle") Description
-                input(type="text" name="description" required="required")
+                label(for='tittle') Description
+                input(type='text', name='description', required='required')
             div
-                label(for="tittle") Author
-                input(type="text" name="author" required="required")
+                label(for='tittle') Author
+                input(type='text', name='author', required='required')
             div
-                button(type="submit") Create
+                button(type='submit') Create
     //- Read books
-    div.content_book
+    .content_book
         h2 Read Books
-        div.list_books
+        .list_books
             each book in books
                 ul
                     li
                         span Title:&nbsp
-                        =book.title
+                        = book.title
                     li
                         span Description:&nbsp
-                        =book.description
+                        = book.description
                     li
                         span Author:&nbsp
-                        =book.author
+                        = book.author
                     li
                         span ID:&nbsp
-                        =book._id
+                        = book._id
     //- Update books
-    div.content_book
+    .content_book
         h2 Update Books
-        form(action="/update" method="POST")
+        form(action='/update', method='POST')
             div
-                label(for="tittle") ID
-                input(type="text" name="id" required="required")
+                label(for='tittle') ID
+                input(type='text', name='id', required='required')
             div
-                label(for="tittle") Title
-                input(type="text" name="title" required="required")
+                label(for='tittle') Title
+                input(type='text', name='title', required='required')
             div
-                label(for="tittle") Description
-                input(type="text" name="description" required="required")
+                label(for='tittle') Description
+                input(type='text', name='description', required='required')
             div
-                label(for="tittle") Author
-                input(type="text" name="author" required="required")
-            button(type="submit") Update
+                label(for='tittle') Author
+                input(type='text', name='author', required='required')
+            button(type='submit') Update
 
     //- Delete books
-    div.content_book
+    .content_book
         h2 Delete Books
-        form(action="/delete" method="POST")
+        form(action='/delete', method='POST')
             div
-                label(for="id") ID
-                input(type="text" name="id" required="required")
-            button(type="submit") Delete
+                label(for='id') ID
+                input(type='text', name='id', required='required')
+            button(type='submit') Delete

@@ -1,40 +1,50 @@
 {
-  "name": "bookstore",
-  "version": "1.0.0",
-  "private": true,
-  "description": "CRUD book store web app",
-  "keywords": [
-    "nodejs",
-    "expressjs",
-    "mongodb"
-  ],
-  "homepage": "https://github.com/BaoDuong254/book-store#readme",
-  "bugs": {
-    "url": "https://github.com/BaoDuong254/book-store/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BaoDuong254/book-store.git"
-  },
-  "license": "ISC",
-  "author": "BaoDuong254 duonggiabao254@gmail.com",
-  "type": "commonjs",
-  "main": "app.js",
-  "scripts": {
-    "start": "nodemon app.js"
-  },
-  "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "http-errors": "~1.6.3",
-    "mongodb": "^6.14.2",
-    "mongoose": "^8.12.1",
-    "morgan": "~1.9.1",
-    "pug": "^3.0.3"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.9"
-  }
+    "name": "bookstore",
+    "version": "1.0.0",
+    "private": true,
+    "description": "CRUD book store web app",
+    "keywords": [
+        "nodejs",
+        "expressjs",
+        "mongodb"
+    ],
+    "homepage": "https://github.com/BaoDuong254/book-store#readme",
+    "bugs": {
+        "url": "https://github.com/BaoDuong254/book-store/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BaoDuong254/book-store.git"
+    },
+    "license": "ISC",
+    "author": "BaoDuong254 duonggiabao254@gmail.com",
+    "type": "commonjs",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint . ",
+        "lint:fix": "eslint . --fix"
+    },
+    "dependencies": {
+        "cookie-parser": "~1.4.4",
+        "debug": "~2.6.9",
+        "dotenv": "^16.4.7",
+        "eslint-config-prettier": "^10.1.1",
+        "eslint-plugin-prettier": "^5.2.3",
+        "express": "^4.21.2",
+        "http-errors": "~1.6.3",
+        "mongodb": "^6.14.2",
+        "mongoose": "^8.12.1",
+        "morgan": "~1.9.1",
+        "pug": "^3.0.3"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.22.0",
+        "@prettier/plugin-pug": "^3.2.1",
+        "eslint": "^9.22.0",
+        "globals": "^16.0.0",
+        "nodemon": "^3.1.9",
+        "prettier": "^3.5.3"
+    }
 }
