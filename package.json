@@ -1,5 +1,5 @@
 {
-    "name": "bookstore",
+    "name": "@BaoDuong254/book-store",
     "version": "1.0.0",
     "private": false,
     "description": "CRUD book store web app",
