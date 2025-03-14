@@ -24,7 +24,8 @@
         "start": "nodemon app.js",
         "format:write": "prettier --write .",
         "lint:check": "eslint . ",
-        "lint:fix": "eslint . --fix"
+        "lint:fix": "eslint . --fix",
+	"test": "echo \"No test specified\" && exit 0"
     },
     "dependencies": {
         "cookie-parser": "~1.4.4",
