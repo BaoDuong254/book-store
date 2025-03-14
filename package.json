@@ -24,7 +24,8 @@
         "start": "nodemon app.js",
         "format:write": "prettier --write .",
         "lint:check": "eslint . ",
-        "lint:fix": "eslint . --fix"
+        "lint:fix": "eslint . --fix",
+	"test": "echo \"No test specified\" && exit 0"
     },
     "dependencies": {
         "cookie-parser": "~1.4.4",
@@ -46,5 +47,8 @@
         "globals": "^16.0.0",
         "nodemon": "^3.1.9",
         "prettier": "^3.5.3"
-    }
+    },
+    "publishConfig": {
+  "registry": "https://npm.pkg.github.com/"
+}
 }
