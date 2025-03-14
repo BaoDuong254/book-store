@@ -1,7 +1,7 @@
 {
     "name": "bookstore",
     "version": "1.0.0",
-    "private": true,
+    "private": false,
     "description": "CRUD book store web app",
     "keywords": [
         "nodejs",
