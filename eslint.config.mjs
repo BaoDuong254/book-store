@@ -1,6 +1,7 @@
 import globals from 'globals'
 import pluginJs from '@eslint/js'
 import eslintPluginPrettier from 'eslint-plugin-prettier'
+import eslintConfigPrettier from 'eslint-config-prettier'
 /** @type {import('eslint').Linter.Config[]} */
 export default [
     { files: ['**/*.js'], languageOptions: { sourceType: 'commonjs' } },
@@ -17,12 +18,13 @@ export default [
                     arrowParens: 'always',
                     semi: false,
                     trailingComma: 'none',
-                    tabWidth: 2,
+                    tabWidth: 4,
                     endOfLine: 'auto',
                     useTabs: false,
                     singleQuote: true,
                     printWidth: 120,
-                    jsxSingleQuote: true
+                    jsxSingleQuote: true,
+                    plugins: ['@prettier/plugin-pug']
                 }
             ]
         },

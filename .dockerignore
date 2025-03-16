@@ -1,0 +1,13 @@
+node_modules
+.env
+*.log
+.git
+.gitignore
+.prettierignore
+.prettierrc
+eslint.config.mjs
+README.md
+.DS_Store
+.idea
+*.swp
+Dockerfile
