@@ -1,6 +1,6 @@
 # Book Store
 
-This project is a basic CRUD web application built using Node.js, Express.js, and MongoDB.
+This project is a basic CRUD web application built using Node.js, Express.js, and MongoDB. Integrates Docker, Nginx for easy deployment and containerization.
 
 ## Overview
 
