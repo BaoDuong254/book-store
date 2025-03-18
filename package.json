@@ -21,7 +21,8 @@
     "type": "commonjs",
     "main": "app.js",
     "scripts": {
-        "start": "nodemon app.js",
+        "start": "node app.js",
+        "devStart": "nodemon app.js",
         "format:write": "prettier --write .",
         "lint:check": "eslint . ",
         "lint:fix": "eslint . --fix",

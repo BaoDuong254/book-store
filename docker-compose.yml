@@ -1,0 +1,61 @@
+services:
+    book-store-1:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: book-store-1
+        ports:
+            - '3001:3000'
+        environment:
+            - APP_NAME=BookStore1
+        env_file:
+            - .env
+        depends_on:
+            - mongo
+    book-store-2:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: book-store-2
+        ports:
+            - '3002:3000'
+        environment:
+            - APP_NAME=BookStore2
+        env_file:
+            - .env
+        depends_on:
+            - mongo
+    book-store-3:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: book-store-3
+        ports:
+            - '3003:3000'
+        environment:
+            - APP_NAME=BookStore3
+        env_file:
+            - .env
+        depends_on:
+            - mongo
+    mongo:
+        image: mongo:latest
+        container_name: mongodb
+        restart: always
+        ports:
+            - '27017:27017'
+        volumes:
+            - mongo-data:/data/db
+    nginx:
+        image: nginx:stable
+        container_name: nginx
+        volumes:
+            - ./nginx.conf:/etc/nginx/nginx.conf:ro
+        ports:
+            - '80:80'
+        depends_on:
+            - book-store-1
+            - book-store-2
+            - book-store-3
+volumes:
+    mongo-data:

@@ -5,6 +5,7 @@ const Book = require('../model/book.model')
 // Read books
 router.get('/', async (req, res) => {
     let books = await Book.find()
+    console.log(`Server is running on ${process.env.APP_NAME}`)
     res.render('index', { books: books })
 })
 
